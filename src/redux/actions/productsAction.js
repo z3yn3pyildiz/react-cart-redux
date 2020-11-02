@@ -22,7 +22,7 @@ export function updateProductsSuccess(product) {
 
 export function saveProductApi(product) {
   debugger
-  return fetch("http://localhost:3000/product/"+(product.id||""), {
+  return fetch("https://my-json-server.typicode.com/z3yn3pyildiz/northwindapi/product/"+(product.id||""), {
     method: product.id? "PUT" : "POST",
     headers : {'content-type' : "application/json"},
     body: JSON.stringify(product),
