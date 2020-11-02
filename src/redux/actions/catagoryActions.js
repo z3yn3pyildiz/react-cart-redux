@@ -13,7 +13,7 @@ export  function getCategories(){
   
   return async function(dispatch){
     
-    let url="http://localhost:3000/catagory";
+   let url="https://my-json-server.typicode.com/z3yn3pyildiz/northwindapi/catagory";
     const response = await fetch(url);
     const result = await response.json();
     return dispatch(getCategoriesSuccess(result));
