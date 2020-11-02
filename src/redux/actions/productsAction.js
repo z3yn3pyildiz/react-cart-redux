@@ -63,7 +63,7 @@ export function handleError(error){
 
 export function getProducts(catagoryId) {
   return async function (dispatch) {
-    let url = "http://localhost:3000/product";
+   et url = "https://my-json-server.typicode.com/z3yn3pyildiz/northwindapi/product";
     if (catagoryId) {
       url = url + "?categoryID=" + catagoryId;
     }
